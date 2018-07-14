@@ -6,12 +6,12 @@ static const char *fonts[] = {
 	"PragmataPro:size=10"
 };
 static const char dmenufont[]       = "PragmataPro:size=10";
-static const char normbordercolor[] = "#444444";
-static const char normbgcolor[]     = "#222222";
-static const char normfgcolor[]     = "#bbbbbb";
-static const char selbordercolor[]  = "#005577";
-static const char selbgcolor[]      = "#005577";
-static const char selfgcolor[]      = "#eeeeee";
+static const char normbordercolor[] = "#988D6D";
+static const char normbgcolor[]     = "#FFFFE8";
+static const char normfgcolor[]     = "#988D6D";
+static const char selbordercolor[]  = "#98ECE8";
+static const char selbgcolor[]      = "#98ECE8";
+static const char selfgcolor[]      = "#4FA8A8";
 static const unsigned int borderpx  = 4;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
