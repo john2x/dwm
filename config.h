@@ -17,24 +17,6 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 
-/* statuscolors patch */
-// https://dwm.suckless.org/patches/statuscolors/
-#define NUMCOLORS         4
-static const char colors[NUMCOLORS][MAXCOLORS][8] = {
-  // border   foreground background
-  { "#444444", "#bbbbbb", "#222222" },  // normal
-  { "#005577", "#eeeeee", "#005577" },  // selected
-  { "#ff0000", "#000000", "#ffff00" },  // urgent/warning  (black on yellow)
-  { "#ff0000", "#ffffff", "#ff0000" },  // error (white on red)
-  // add more here
-};
-
-/* systray patch */
-static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
-static const unsigned int systrayspacing = 2;   /* systray spacing */
-static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display systray on the first monitor, 0: display systray on the last monitor*/
-static const int showsystray        = 1;        /* 0 means no systray */
-
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
