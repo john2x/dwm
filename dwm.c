@@ -1571,6 +1571,7 @@ void
 runorraise(const Arg *arg) {
     char *app = ((char **)arg->v)[4];
     Arg a = { .ui = ~0 };
+    Arg m = { .i = 1 };
     Monitor *mon;
     Client *c;
     XClassHint hint = { NULL, NULL };
@@ -1579,6 +1580,10 @@ runorraise(const Arg *arg) {
         for (c = mon->clients; c; c = c->next) {
             XGetClassHint(dpy, c->win, &hint);
             if (hint.res_class && strcmp(app, hint.res_class) == 0) {
+                if (selmon != mon) {
+	            // not tested with more than 2 monitors
+                    focusmon(&m);
+                }
                 a.ui = c->tags;
                 view(&a);
                 focus(c);
