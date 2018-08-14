@@ -2,10 +2,11 @@
 #include "movestack.c"
 
 /* appearance */
+
 static const char *fonts[] = {
-	"PragmataPro:size=10"
+	"Siji:style=Regular:size=10"
 };
-static const char dmenufont[]       = "PragmataPro:size=10";
+static const char dmenufont[]       = "Siji:style=Regular:size=10";
 static const char normbordercolor[] = "#988D6D";
 static const char normbgcolor[]     = "#FFFFE8";
 static const char normfgcolor[]     = "#988D6D";
@@ -52,9 +53,9 @@ static const int resizehints = 1;    /* 1 means respect size hints in tiled resi
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[]=",      tile },    /* first entry is default */
-	{ "><>",      NULL },    /* no layout function means floating behavior */
-	{ "[M]",      monocle },
+	{ "",      tile },    /* first entry is default */
+	{ "",      NULL },    /* no layout function means floating behavior */
+	{ "",      monocle },
 };
 
 /* key definitions */
